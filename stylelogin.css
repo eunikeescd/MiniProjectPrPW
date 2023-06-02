@@ -1,0 +1,106 @@
+html {
+  font-family: "Sono", sans-serif;
+  background-color: gray;
+  background-image: url(https://img.freepik.com/free-vector/orange-background-desktop-wallpaper-cute-vector_53876-136872.jpg?w=740&t=st=1678859328~exp=1678859928~hmac=8140ab74c548b0c8bddc3ea3fc21d086b170b7d28bab619f70f31ae9b61211f1);
+}
+
+header{
+  background-color: #fa952d;
+  width: 100%;
+  height: 6%;
+  color: white;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  font-size: 200%;
+  /* display: inline-block; */
+  overflow: auto;
+  padding-top: 0.5%;
+
+}
+footer{
+  left: 0;
+
+  background-color: #fa952d;
+  height: 7%;
+  width: 100%;
+
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 150%;
+  /* display: inline-block; */
+  overflow: auto;
+  color: white;
+  padding-top: 1.3%;
+
+}
+#containerlogin {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+
+  width: 350px;
+  height: 500px;
+
+  border-radius: 30px;
+  border: 3px solid black;  
+  background-color: #fff5ec;
+
+  
+}
+
+form{
+  width: 50%;
+  height: 50%;
+  top: 40px;
+  margin: 0 auto;
+  position: relative;
+    
+}
+
+label{
+  color: #fa952d;
+  font-weight: bold;
+}
+#containerlogin h3{
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+.logsalah {
+  color: red;
+  text-align: center;
+}
+
+input[type=text], input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+border-radius: 10px;
+border-color: #fa952d;
+  background: white;
+}
+
+button {
+  background-color: #fa952d;
+  border-radius: 10px;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  border: none;
+  width: 100px;
+  align-items: center;
+  text-align: center;
+
+  opacity: 0.9;
+}

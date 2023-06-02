@@ -1,0 +1,444 @@
+html {
+    font-family: 'Sono', sans-serif;
+    background-color: gray;
+    background-image: url(https://img.freepik.com/free-vector/orange-background-desktop-wallpaper-cute-vector_53876-136872.jpg?w=740&t=st=1678859328~exp=1678859928~hmac=8140ab74c548b0c8bddc3ea3fc21d086b170b7d28bab619f70f31ae9b61211f1);
+
+}
+
+header{
+    background-color: #fa952d;
+    width: 100%;
+    height: 6%;
+    color: white;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    font-size: 200%;
+    /* display: inline-block; */
+    overflow: auto;
+    padding-top: 0.5%;
+
+}
+footer{
+    left: 0;
+
+    background-color: #fa952d;
+    height: 7%;
+    width: 100%;
+
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+    /* display: inline-block; */
+    overflow: auto;
+    color: white;
+    padding-top: 1.3%;
+
+}
+
+
+aside {
+    margin: 6.2% 0 0 0;
+    width: 35%;
+    float: left;
+}
+
+main {
+    margin: 5% 0 0 0;
+    width: 60%;
+    float: right;
+}
+
+#main2 {
+    margin: 5% 0 0 0;
+    /* width: 30%; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+
+div.reminder#active {
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    border-radius: 50%;
+    margin:auto;
+    margin-bottom: -11px;
+}
+div.reminder#active_penting {
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%;
+    margin:auto;
+    margin-bottom: -11px;
+    /* text-align: center; */
+    /* transform: translateX(-300%); */
+
+}
+div.reminder#active_biasa {
+    height: 10px;
+    width: 10px;
+    background-color: green;
+    border-radius: 50%;
+    margin:auto;
+    margin-bottom: -11px;
+    /* transform: translateX(-300%); */
+
+}
+div.reminder#active_sedang {
+    height: 10px;
+    width: 10px;
+    background-color: orange;
+    border-radius: 50%;
+    margin:auto;
+    margin-bottom: -11px;
+    /* transform: translateX(-300%); */
+}
+table {
+    width: 100%;
+    height: 100%;
+    /* border: 1; */
+}
+
+/* #tabeltanggal  {
+    border: 1;
+} */
+#tabeltanggal #angka {
+    height: 75px;
+    /* text-align: left; */
+    /* transform: translateX(10%); */
+}
+
+
+#containerkalender {
+    
+    margin-right: 10%;
+    /* margin-left: 5%; */
+    /* position: ; */
+
+
+    width: 700px;
+    height: 550px;
+
+    border-radius: 30px;
+    background-color: #fcf8f5;
+    /* overflow: scroll; */
+
+}
+
+.num{
+    color: #000;
+}
+.num a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+
+#prev, #next {
+    color: rgb(201, 201, 201);
+}
+
+
+
+/* hari tanggal */
+
+#kontainerharitanggal {
+    margin-right: auto;
+    margin-left: 200px;
+    margin-right: 0px;
+
+/* 
+   
+    top: -20px; */
+    position: relative;
+    width: 250px;
+    height: 200px;
+
+    border-radius: 30px;
+    background-color: #fcf8f5;
+}
+
+#kontainerharitanggal h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+li {
+    color: black;  
+    font-size: 25px;
+    list-style-type:disc;
+
+
+}
+#penting{
+    color: red;  
+    font-size: 25px;
+}
+#sedang{
+    color: orange;  
+    font-size: 25px;
+}
+#biasa{
+    color: green;  
+    font-size: 25px;
+}
+
+li a{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    /* text-decoration: none; */
+    /* cursor: pointer; */
+    /* text-shadow: 2px 2px black; */
+}
+
+
+ul.breadcrumb {
+  padding: 12px 10px;
+  list-style: none;
+  position: absolute;
+  top: 5%;
+  /* background-color: #eee; */
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 0px;
+  color: black;
+  content: ">\00a0";
+  font-weight: bold;
+  
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+  
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    box-shadow: -3px 2px 2px black;
+    font-size: 18px;
+
+  color: #fa952d;
+  /* text-decoration: none; */
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #312dfa;
+  text-decoration: underline;
+}
+
+#bisa_diklik:hover{
+    color: #312dfa;
+        text-decoration: underline;
+}
+
+#bisa_diklik_membesar:hover{
+    font-size: xx-large;
+}
+#kontainerharitanggal h1, #kontainerevents h1 {
+    background-color: #fa952d;
+    height: 58.5px;
+    border-radius: 30px 30px 0 0;
+
+    width: 250px;
+
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0 0 0;
+
+    color: white;
+}
+
+#haritanggal + p {
+    text-align: center;
+    font-size: 50px;
+    color: #fa952d;
+    margin: 2px;
+  }
+  
+#haritanggal + p + p {
+    text-align: center;
+    font-size: 40px;
+    color: #fa952d;
+    margin: 2px;
+  }
+
+#kontainerevents {
+    margin-right: auto;
+    margin-left: 200px;
+    margin-right: 0px;
+    margin-top: 100px;
+    
+
+    width: 250px;
+    height: 250px;
+
+    position: relative;
+
+    border-radius: 0 0 0px 30px;
+    background-color: #fcf8f5;
+
+    overflow-y: scroll;
+}
+
+#kontainerevents::-webkit-scrollbar {
+    width: 10px;
+  }
+
+#kontainerevents::-webkit-scrollbar-track {
+    background-color: gainsboro;
+  }
+
+#kontainerevents::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#event {
+    /* margin-bottom: 10px; */
+    position: absolute;
+    left: 208px;
+    background-color: #fa952d;
+    color: white;
+    height: 70px;
+    border-radius: 30px 30px 0 0;
+    padding-top: 25px;
+
+    width: 250px;
+    text-align: center;
+    font-size: 30px;
+
+
+
+}
+
+
+#eventbox {
+    padding-left: 10px;
+}
+
+#eventbox li {
+    height: 40%;
+    width: 83%;
+    margin-bottom: 2px;
+    margin-top: 5px;
+    padding: 10px;
+    
+    background-color: white;
+
+    /* border: 1px solid black; */
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+#containerkalender #bulan {
+    margin: 0;
+    padding: 20px 0 20px 0;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+    background-color: #fa952d;
+    border-radius: 30px 30px 0 0;
+}
+
+#tabeltanggal {
+    padding: 40px 20px 25px 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #2c3d59;
+    /* transform: translateY(20%); */
+}
+
+#minggu {
+    color: #fa952d;
+    font-size: large;
+}
+
+#tanggalSekarang{
+    background-color: #fa952d;
+    border-radius: 50%;
+    width: 30%;
+    padding: 10%;
+    transform: translateX(50%);
+    color: white;
+}
+
+.clickable{
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+
+}
+
+.logdiv{
+    position: fixed;
+    padding: 12px 10px;
+
+    top: 1em;
+    right: 1em;
+}
+.logdiv li{
+    list-style-type: none;
+    padding: 12px 10px;
+    /* top:5%; */
+}
+
+.butlogout {
+    background-color: white;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    border-radius: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    box-shadow: -3px 2px 2px black;
+    font-size: 18px;
+
+  color: #fa952d;
+    
+}
+.butlogout:hover{
+    color: #312dfa;
+  text-decoration: underline;
+}
+
+.header-name{
+    position: fixed;
+    padding: 12px 10px;
+
+
+}

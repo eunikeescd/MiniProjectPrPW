@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="stylekalender.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylekegiatan.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        Kalender 2023
+        
+    </header>
+    <ul class="breadcrumb">
+        <li><a href="kalender.php">Halaman Utama</a></li>
+        <li><a href="">Detail Kegiatan</a></li>
+
+
+      </ul>
+      <main2 id="main2">
+        <h1 id="headKegiatan">Detail Kegiatan</h1>
+
+        <br>
+
+        <div id="containerkegiatan">
+            <div id="bgKegiatan">
+                <table id="tabeltanggal" >
+                    <tr id="minggu">
+                        <th colspan="3"><img src="https://prolifics.com/wp-content/uploads/2020/08/PM-rpa.jpg" id="gambarKegiatan" width="414" height="310" alt="Kegiatan Projek"></th>
+              
+                    </tr>
+                    <!-- <tr id="kegiatan">
+                        <td >Nama Kegiatan<div class="reminder"></div>
+                        </td>
+                        <td >Projek<div class="reminder"></div>
+                        </td>
+                      
+                    </tr>
+
+                    <tr id="kegiatan">
+                        <td>
+                            <div class="num">Tanggal  </div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num">1-13 Maret 2023 </div>
+                            <div class="reminder"></div>
+                        </td>
+                     
+                    </tr>
+
+                    <tr id="kegiatan">
+                        <td>
+                            <div class="num">Prioritas </div>
+                            <div class="reminder"></div>
+                        </td>
+                        
+                        <td>
+
+                            <div class="prioritas_penting">Sangat Penting</div>
+                            
+                        </td>
+                       
+                    </tr>
+
+                    <tr id="kegiatan">
+                        <td>
+                            <div class="num">Lokasi </div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num">Shanghai miHoYo Yingtie Technology Co., Ltd. · Shanghai miHoYo Tianming Technology Co., Ltd. · Cognosphere Pte. Ltd.</div>
+                            <div class="reminder"></div>
+                        </td>
+                        
+                    </tr> -->
+                    <tr id="kegiatan">
+                        <td ><div class="num"><img src="event.png" alt="icon tanggal"  width="20" class="icon">Nama Kegiatan</div><div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num"> : </div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td ><div class="num">Projek</div><div class="reminder"></div>
+                        </td>
+                      
+                    </tr>
+
+                    <tr id="kegiatan">
+                        <td>
+                            <div class="num"><img src="clock.png" alt="icon tanggal" width="20" class="icon">Waktu Mulai </div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num"> : </div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num">1 Maret 2023, 07.00</div>
+                            <div class="reminder"></div>
+                        </td>
+                     
+                    </tr>
+                    <tr id="kegiatan">
+                        <td>
+                            <div class="num"><img src="clock.png" alt="icon tanggal" width="20" class="icon">Waktu Selesai</div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num"> : </div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num">13 Maret 2023, 19.00 </div>
+                            <div class="reminder"></div>
+                        </td>
+                     
+                    </tr>
+                    <!-- <tr id="kegiatan">
+                        <td>
+                            <div class="num"><img src="clock.png" alt="icon tanggal" width="20" class="icon">Waktu</div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num"> : </div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num"> 15.00-19.00</div>
+                            <div class="reminder"></div>
+                        </td>
+                        
+                    </tr> -->
+
+                    <tr id="kegiatan">
+                        <td>
+                            <div class="num"><img src="R.png" alt="icon tanggal" width="20" class="icon">Prioritas </div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num"> : </div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+
+                            <span class="prioritas_penting">Sangat Penting</span>
+                            
+                        </td>
+                       
+                    </tr>
+
+                    <tr id="kegiatan">
+                        <td>
+                            <div class="num"><img src="location.png" alt="icon tanggal" width="20" class="icon">Lokasi </div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num"> : </div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num"><a href="https://www.google.com/maps/search/No.100+Qinzhou+Road,+Building+1,+Room+1012,+Shanghai,+CN-31+200235,+CN/@31.16979,121.4284113,17z/data=!3m1!4b1" id="bisa_diklik">No.100 Qinzhou Road, Building 1, Room 1012, Shanghai, CN-31 200235, CN</a></div>
+                            <div class="reminder"></div>
+                        </td>
+                        
+                    </tr>
+          
+
+                </table>
+            </div>
+        </div>
+    </main2>
+    <ul class="logdiv">
+        <li>
+             <form  method="post" action="kalender.php" >
+           <input class= "butlogout" type="submit" name="logout" value="Logout" ></input>
+         </form>
+         </li>
+         </div>
+       </ul>
+
+<footer>
+    © Kelompok 5 PrakProgweb
+</footer>
+    
+</body>
+
+</html>

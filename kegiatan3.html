@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="stylekalender.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylekegiatan.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        Kalender 2023
+        
+    </header>
+    <ul class="breadcrumb">
+        <li><a href="kalender.php">Halaman Utama</a></li>
+        <li><a href="">Detail Kegiatan</a></li>
+
+
+      </ul>
+      <main2 id="main2">
+        <h1 id="headKegiatan">Detail Kegiatan</h1>
+
+        <br>
+
+        <div id="containerkegiatan">
+            <div id="bgKegiatan">
+                <table id="tabeltanggal">
+                    <tr id="minggu">
+                        <th colspan="3"><img src="https://th.bing.com/th/id/OIP.FtQ_79lmpjNK-uFRzeDbiwHaE8?pid=ImgDet&rs=1" width="414" height="310" alt="Kegiatan Ulang Tahun" id="gambarKegiatan"></th>
+              
+                    </tr>
+                    <tr id="kegiatan">
+                        <td > <div class="num"><img src="event.png" alt="icon tanggal" width="20" class="icon">Nama Kegiatan</div><div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num"> : </div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td > <div class="num">Perayaan Ulang Tahun</div><div class="reminder"></div>
+                        </td>
+                      
+                    </tr>
+
+                    <tr id="kegiatan">
+                        <td>
+                            <div class="num"><img src="clock.png" alt="icon tanggal" width="20" class="icon">Waktu Mulai </div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num"> : </div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num">11 Maret 2023, 15.00 </div>
+                            <div class="reminder"></div>
+                        </td>
+                     
+                    </tr>
+                    <tr id="kegiatan">
+                        <td>
+                            <div class="num"><img src="clock.png" alt="icon tanggal" width="20" class="icon">Waktu Selesai</div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num"> : </div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num">11 Maret 2023, 19.00 </div>
+                            <div class="reminder"></div>
+                        </td>
+                     
+                    </tr>
+                    <!-- <tr id="kegiatan">
+                        <td>
+                            <div class="num"><img src="clock.png" alt="icon tanggal" width="20" class="icon">Waktu</div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num"> : </div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num"> 15.00-19.00</div>
+                            <div class="reminder"></div>
+                        </td>
+                        
+                    </tr> -->
+
+                    <tr id="kegiatan">
+                        <td>
+                            <div class="num"><img src="R.png" alt="icon tanggal" width="20" class="icon">Prioritas </div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num"> : </div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+
+                            <span class="prioritas_biasa">Biasa</span>
+                            
+                        </td>
+                       
+                    </tr>
+
+                    <tr id="kegiatan">
+                        <td>
+                            <div class="num"><img src="location.png" alt="icon tanggal" width="20" class="icon">Lokasi </div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num"> : </div>
+                            <div class="reminder"></div>
+                        </td>
+                        <td>
+                            <div class="num"><a href="https://www.google.com/maps/place/Nanamia+Pizzeria+Jogja+(South+Area)/@-7.8180308,110.3604449,17z/data=!4m15!1m8!3m7!1s0x2e7a57bd963abb5d:0x58480d22d5bb10fa!2sTirtodipuran+St+No.1,+Mantrijeron,+Yogyakarta+City,+Special+Region+of+Yogyakarta+55143!3b1!8m2!3d-7.8180417!4d110.3626716!16s%2Fg%2F11cs9jp84y!3m5!1s0x2e7a57bdbddd5d99:0xe19d896da9b1e5fd!8m2!3d-7.8180926!4d110.3626235!16s%2Fg%2F1q6bd_dqz" id="bisa_diklik">Jl. Tirtodipuran no. 1 55143 Yogyakarta  </a></div>
+                            <div class="reminder"></div>
+                        </td>
+                        
+                    </tr>
+
+                    
+          
+
+                </table>
+            </div>
+        </div>
+    </main2>
+    <ul class="logdiv">
+        <li>
+             <form  method="post" action="kalender.php" >
+           <input class= "butlogout" type="submit" name="logout" value="Logout" ></input>
+         </form>
+         </li>
+         </div>
+       </ul>
+
+<footer>
+    © Kelompok 5 PrakProgweb
+</footer>
+    
+</body>
+
+</html>

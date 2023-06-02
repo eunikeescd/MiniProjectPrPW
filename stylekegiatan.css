@@ -1,0 +1,96 @@
+#dataKegiatan{
+    position: absolute;
+}
+
+#containerkegiatan {
+    
+    margin-right: 10%;
+    /* margin-left: 5%; */
+    /* position: ; */
+
+
+    width: 700px;
+    height: 550px;
+
+    border-radius: 30px;
+    background-color: #fcf8f5;
+    overflow: scroll;
+
+}
+#headKegiatan {
+    margin-bottom: 10px;
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -1%;
+    background-color: #fa952d;
+    color: white;
+    height: 75px;
+    border-radius: 30px 30px 0 0;
+    padding-top: 15px;
+  
+    width: 700px;
+    text-align: center;
+    font-size: 30px;
+    
+
+}
+
+#gambarKegiatan{
+    margin-top: 10%;
+    border-radius: 10%;
+}
+
+#tabeltanggal #kegiatan {
+    height: 75px;
+    text-align: left; 
+     /* transform: translateX(-10%); */
+}
+
+#kegiatan >td > .num{
+    color: black;
+    
+}
+
+
+.prioritas_penting{
+    text-align: center;
+    width: 30%;
+    border-radius: 5px;
+    padding: 3px ;
+    background-color: red;
+    color: white;
+}
+
+.prioritas_sedang{
+    text-align: center;
+    width: 50%;
+    border-radius: 5px;
+    padding: 3px ;
+    background-color: orange;
+    color: white;
+    
+}
+
+.prioritas_biasa{
+    text-align: center;
+    width: 30%;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    padding: 3px ;
+}
+
+.icon{
+
+    padding-right: 10%;
+}
+
+#kegiatan > td + td + td >div >a{
+       color: black;
+    font-size: 15px;
+    font-weight: bold;
+        text-decoration: underline;
+
+}
