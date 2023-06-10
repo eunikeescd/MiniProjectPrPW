@@ -11,7 +11,6 @@ if (isset($_POST['logout'])) {
     session_destroy();
     header('location:login_kalender.php');
 }
-mysqli_close($conn);
 
 ?> 
 <!DOCTYPE html>
@@ -55,6 +54,7 @@ mysqli_close($conn);
         <div id="kontainerevents">
         <div id="eventbox">
             <ul>
+
                 <li><a>Keterangan : 
                     <ul>
                         <li id="biasa"><a>Biasa</a></li>
@@ -64,7 +64,10 @@ mysqli_close($conn);
 
                     </ul>
                 </a></li>
-                <div >
+
+
+
+                <!-- <div >
                 <li id="penting"><a href="kegiatan2.html" id="bisa_diklik" >1 : Mulai Projek</a></li>
 
             <li id="sedang"><a href="kegiatan1.html" id="bisa_diklik" >2 : Bootcamp</a></li>
@@ -74,8 +77,31 @@ mysqli_close($conn);
 
             <li id="penting"><a  href="kegiatan2.html" id="bisa_diklik">13 : Deadline Projek</a></li>
             <li id="biasa"><a  href="kegiatan5.html" id="bisa_diklik">14 : Turnamen E-sport</a></li>
+            <li ><a href="tambah_kegiatan.php" id="bisa_diklik"  >Tambah Kegiatan</a></li>
+                    </div> -->
+                    <div>
+                        <?php
+                        $sql = "SELECT * FROM kegiatan";
+                        $result = $conn->query($sql);
+                        
+                    while($row = $result->fetch_assoc()) {
+    echo"<li id=".$row["prioritas"]."><a href='kegiatan2.html' id='bisa_diklik' >1 : ".$row["nama"]."</a></li>";
+
+    //  "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+  }
+  
+  mysqli_close($conn);
+
+  ?>
+              <li ><a href="tambah_kegiatan.php" id="bisa_diklik"  >Tambah Kegiatan</a></li>
+
+
 
                     </div>
+
+
+
+
         </ul>
         </div>
 

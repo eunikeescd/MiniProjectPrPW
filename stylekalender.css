@@ -255,7 +255,9 @@ ul.breadcrumb li a:hover {
     color: #312dfa;
         text-decoration: underline;
 }
-
+#b{
+    color: #fa952d;
+}
 #bisa_diklik_membesar:hover{
     font-size: xx-large;
 }
