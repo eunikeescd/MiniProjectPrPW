@@ -1,7 +1,7 @@
 
 
 <?php
-$conn = mysqli_connect("127.0.0.1","root","","miniproject") or die("Koneksi gagal.");
+include("connect.php");
 session_start();
 if (!isset($_SESSION['username'])) {
     header('location:login_kalender.php');
