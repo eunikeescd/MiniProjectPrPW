@@ -40,8 +40,11 @@ $sql = "SELECT * FROM kegiatan where id=$id_itu";
             <div id="bgKegiatan">
                 <table id="tabeltanggal">
                     <tr id="minggu">
-                        <th colspan="3"><img src="https://eduwork.id/templates/v1/images/img/edi.png" id="gambarKegiatan" width="414" height="310" alt="Kegiatan Bootcamp"></th>
-              
+                        <th colspan="3"><img src="<?php  while($row = $result->fetch_assoc()) {
+                             echo $row["gambar"]
+                             ;
+                             ?>" id="gambarKegiatan" width="414" height="310" alt="Kegiatan Bootcamp"></th>
+                        
                     </tr>
                     <!-- <tr id="kegiatan">
                         <td >Nama Kegiatan<div class="reminder"></div>
@@ -99,7 +102,7 @@ $sql = "SELECT * FROM kegiatan where id=$id_itu";
                         </td>
                         <td ><div class="num">
                             <?php
-                                                while($row = $result->fetch_assoc()) {
+                                              
 
                             echo $row["nama"]
                             ;
@@ -180,7 +183,7 @@ $sql = "SELECT * FROM kegiatan where id=$id_itu";
                             ?>>
                                 <?php
                         echo $row["prioritas"];
-                                                }
+                                                
                                 ?>
                             </span>
                             
@@ -198,7 +201,9 @@ $sql = "SELECT * FROM kegiatan where id=$id_itu";
                             <div class="reminder"></div>
                         </td>
                         <td>
-                            <div class="num"><a id="bisa_diklik" href="https://www.bing.com/maps?where=Jl.+Ring+Road+Utara+no.+34%2C+Maguwoharjo+Yogyakarta+55282+Yogyakarta+ID&trk=org-locations_url"> Ring Road Utara no. 34, Maguwoharjo Yogyakarta, Yogyakarta 55282, ID</a></div>
+                            <div class="num"><a id="bisa_diklik" href="<?php  echo $row["link_lokasi"];
+?>"><?php                        echo $row["lokasi"];}
+?> </a></div>
                             <div class="reminder"></div>
                         </td>
                         
