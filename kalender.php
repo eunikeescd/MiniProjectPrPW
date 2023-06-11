@@ -85,7 +85,7 @@ if (isset($_POST['logout'])) {
                         $result = $conn->query($sql);
                         
                     while($row = $result->fetch_assoc()) {
-    echo"<li id=".$row["prioritas"]."><a href='kegiatan.php?id=".$row["id"]."' id='bisa_diklik' >1 : ".$row["nama"]."</a></li>";
+    echo"<li id=".$row["prioritas"]."><a href='kegiatan.php?id=".$row["id"]."' id='bisa_diklik' >".date('d',strtotime($row["waktu_mulai"]))." : ".$row["nama"]."</a></li>";
 
     //  "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
   }
