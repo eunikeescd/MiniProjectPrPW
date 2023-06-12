@@ -2,16 +2,7 @@
 
 <?php
 include("connect.php");
-session_start();
-if (!isset($_SESSION['username'])) {
-    header('location:login_kalender.php');
-}
-
-if (isset($_POST['logout'])) {
-    session_destroy();
-    header('location:login_kalender.php');
-}
-
+include("session.php");
 ?> 
 <!DOCTYPE html>
 <html lang="en">
@@ -81,11 +72,13 @@ if (isset($_POST['logout'])) {
                     </div> -->
                     <div>
                         <?php
+                        
                         $sql = "SELECT * FROM kegiatan";
                         $result = $conn->query($sql);
-                        
+              
                     while($row = $result->fetch_assoc()) {
-    echo"<li id=".$row["prioritas"]."><a href='kegiatan.php?id=".$row["id"]."' id='bisa_diklik' >".date('d',strtotime($row["waktu_mulai"]))." : ".$row["nama"]."</a></li>";
+                        $bulan_itu=$bulan[date("m",strtotime($row["waktu_mulai"]))] ;
+    echo"<li id=".$row["prioritas"]."><a href='kegiatan.php?id=".$row["id"]."' id='bisa_diklik' >".date('d ',strtotime($row["waktu_mulai"])).$bulan_itu.date(' 20y',strtotime($row["waktu_mulai"]))." : ".$row["nama"]."</a></li>";
 
     //  "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
   }

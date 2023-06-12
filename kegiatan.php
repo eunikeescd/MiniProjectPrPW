@@ -17,6 +17,9 @@
 <body>
 <?php
 include("connect.php");
+include("session.php");
+
+
 $id_itu=$_GET["id"];
 $sql = "SELECT * FROM kegiatan where id=$id_itu";
                         $result = $conn->query($sql);
@@ -41,6 +44,8 @@ $sql = "SELECT * FROM kegiatan where id=$id_itu";
                 <table id="tabeltanggal">
                     <tr id="minggu">
                         <th colspan="3"><img src="<?php  while($row = $result->fetch_assoc()) {
+                                                    $bulan_itu=$bulan[date("m",strtotime($row["waktu_mulai"]))] ;
+
                              echo $row["gambar"]
                              ;
                              ?>" id="gambarKegiatan" width="414" height="310" alt="Kegiatan Bootcamp"></th>
@@ -127,7 +132,7 @@ $sql = "SELECT * FROM kegiatan where id=$id_itu";
                                 <?php
                                                                                
 
-                                                                                    echo $row["waktu_mulai"];
+                                    echo date('d ',strtotime($row["waktu_mulai"])).$bulan_itu.date(' 20y',strtotime($row["waktu_mulai"])).", ".date('H:i',strtotime($row["waktu_mulai"]));
                                 ?>
                             </div>
                             <div class="reminder"></div>
@@ -145,7 +150,7 @@ $sql = "SELECT * FROM kegiatan where id=$id_itu";
                         </td>
                         <td>
                             <div class="num"><?php
-                                    echo $row["waktu_selesai"];
+                                    echo date('d ',strtotime($row["waktu_selesai"])).$bulan_itu.date(' 20y',strtotime($row["waktu_selesai"])).", ".date('H:i',strtotime($row["waktu_selesai"]));
 
                             ?></div>
                             <div class="reminder"></div>
@@ -182,7 +187,7 @@ $sql = "SELECT * FROM kegiatan where id=$id_itu";
                             <span class=<?php echo"prioritas_".$row["prioritas"];
                             ?>>
                                 <?php
-                        echo $row["prioritas"];
+                        echo ucwords($row["prioritas"]);
                                                 
                                 ?>
                             </span>

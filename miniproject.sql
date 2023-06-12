@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 11, 2023 at 05:59 PM
+-- Generation Time: Jun 12, 2023 at 10:14 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -34,15 +34,17 @@ CREATE TABLE `kegiatan` (
   `waktu_selesai` datetime NOT NULL,
   `prioritas` enum('biasa','sedang','penting') NOT NULL,
   `lokasi` varchar(255) NOT NULL,
-  `link_lokasi` varchar(255) DEFAULT NULL
+  `link_lokasi` varchar(255) DEFAULT NULL,
+  `gambar` varchar(255) DEFAULT NULL,
+  `username` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `kegiatan`
 --
 
-INSERT INTO `kegiatan` (`id`, `nama`, `waktu_mulai`, `waktu_selesai`, `prioritas`, `lokasi`, `link_lokasi`) VALUES
-(1, 'Bootcamp', '2023-03-01 00:12:00', '2023-05-04 00:12:00', 'sedang', 'Ring Road Utara no. 34, Maguwoharjo Yogyakarta, Yogyakarta 55282, ID', 'https://www.bing.com/maps?where=Jl.+Ring+Road+Utara+no.+34%2C+Maguwoharjo+Yogyakarta+55282+Yogyakarta+ID&trk=org-locations_url');
+INSERT INTO `kegiatan` (`id`, `nama`, `waktu_mulai`, `waktu_selesai`, `prioritas`, `lokasi`, `link_lokasi`, `gambar`, `username`) VALUES
+(1, 'Bootcamp', '2023-03-01 00:12:00', '2023-05-04 00:13:00', 'sedang', 'Ring Road Utara no. 34, Maguwoharjo Yogyakarta, Yogyakarta 55282, ID', 'https://www.bing.com/maps?where=Jl.+Ring+Road+Utara+no.+34%2C+Maguwoharjo+Yogyakarta+55282+Yogyakarta+ID&trk=org-locations_url', 'image\\edi.png', 'admin');
 
 -- --------------------------------------------------------
 
@@ -71,7 +73,8 @@ INSERT INTO `users` (`username`, `password`, `nama`) VALUES
 -- Indexes for table `kegiatan`
 --
 ALTER TABLE `kegiatan`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `username` (`username`);
 
 --
 -- Indexes for table `users`
@@ -88,6 +91,16 @@ ALTER TABLE `users`
 --
 ALTER TABLE `kegiatan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `kegiatan`
+--
+ALTER TABLE `kegiatan`
+  ADD CONSTRAINT `kegiatan_ibfk_1` FOREIGN KEY (`username`) REFERENCES `users` (`username`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
