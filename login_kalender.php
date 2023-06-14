@@ -48,6 +48,7 @@ if($_POST) {
 </head>
 
 <body>
+   
 <header>
         Kalender 2023
         
@@ -84,5 +85,9 @@ if($_POST) {
     <footer>
         © Kelompok 5 PrakProgweb
     </footer>
+    <script>
+            nama = document.getElementById("username");
+
+    </script>
 </body>
 </html>
