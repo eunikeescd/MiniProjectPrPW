@@ -10,7 +10,7 @@ header{
     width: 100%;
     height: 6%;
     color: white;
-    position: fixed;
+    position: absolute;
     text-align: center;
     top: 0;
     left: 0;
@@ -21,8 +21,14 @@ header{
     padding-top: 0.5%;
 
 }
+
+#halamantengah {
+    position: absolute;
+}
+
 footer{
     left: 0;
+    float:right;
 
     background-color: #fa952d;
     height: 7%;
@@ -34,6 +40,7 @@ footer{
     font-weight: bold;
     font-size: 150%;
     /* display: inline-block; */
+    margin-top: 50px;
     overflow: auto;
     color: white;
     padding-top: 1.3%;
@@ -74,9 +81,9 @@ div.reminder#active {
 }
 div.reminder#active_penting {
     height: 10px;
-    width: 10px;
+    width: 100%;
     background-color: red;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     margin:auto;
     margin-bottom: -11px;
     /* text-align: center; */
@@ -85,9 +92,9 @@ div.reminder#active_penting {
 }
 div.reminder#active_biasa {
     height: 10px;
-    width: 10px;
+    width: 100%;
     background-color: green;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     margin:auto;
     margin-bottom: -11px;
     /* transform: translateX(-300%); */
@@ -95,9 +102,9 @@ div.reminder#active_biasa {
 }
 div.reminder#active_sedang {
     height: 10px;
-    width: 10px;
+    width: 100%;
     background-color: orange;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     margin:auto;
     margin-bottom: -11px;
     /* transform: translateX(-300%); */
@@ -121,6 +128,7 @@ table {
 #containerkalender {
     
     margin-right: 10%;
+    margin-bottom: 10%;
     /* margin-left: 5%; */
     /* position: ; */
 

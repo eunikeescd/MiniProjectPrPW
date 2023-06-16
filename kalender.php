@@ -26,6 +26,7 @@ include("session.php");
         
    
     </header>
+    <div id="halamantengah">
     <ul class="breadcrumb">
         <li><a href="">Halaman Utama</a></li>
         
@@ -278,6 +279,7 @@ include("session.php");
         </li>
         </div>
       </ul>
+      </div>
 
 <footer>
     © Kelompok 5 PrakProgweb
